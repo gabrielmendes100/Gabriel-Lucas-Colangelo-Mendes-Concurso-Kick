@@ -1,0 +1,143 @@
+#img_container {
+  position: relative;
+  z-index: 0;
+  margin: 0px auto;
+  width: 60%;
+}
+
+#img_container img{
+  width: 100%;
+}
+
+.slide{
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  padding:2%;
+  color:#F8C7CC;
+  border: 2PX solid #a08285;
+  bottom:50%;
+  background-color:#21282a;
+  transition: 0.2s;
+}
+
+.prev i , .next i{
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover, .next:hover {
+  color: #21282a;
+  background-color: #f8d7d7;
+}
+
+.n_text{
+  color: #f8d7d7;
+  background-color:#3e525a;
+  font-size: 20px;
+  padding:1%;
+  position: absolute;
+  top: 2;
+}
+
+.i_text {
+  background-color:#2A383D;
+  color: #f8d7d7;
+  height: fit-content;
+  padding: 10px;
+  display: block;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.wall{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade{
+  from{
+      opacity: 0.2;
+ }
+
+  to{
+      opacity: 1;
+ }
+
+}
+
+@-webkit-keyframes fade{
+  from{
+      opacity: 0.2;
+ }
+
+  to{
+      opacity: 1;
+ }
+
+}
+
+@media only screen and (max-width: 1440px) {
+  .n_text{
+      font-size: 15px;
+ }
+
+  .i_text{
+      font-size: 19px;
+ }
+
+}
+
+@media only screen and (max-width: 1024px) {
+  .prev:hover, .next:hover {
+    color: #F8C7CC;
+    background-color: #21282a;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #img_container{
+      width: 95%;
+ }
+
+  .n_text, .prev,.next{
+      font-size: 12px 
+ }
+
+}
+
+@media only screen and (max-width: 600px) {
+  #banner img{
+      width: 100%;
+ }
+
+  #img_container{
+      width: 100%;
+ }
+
+  .prev,.next{
+      padding: 3.5%;
+ }
+
+  .i_text{
+      font-size: 14px;
+ }
+
+}

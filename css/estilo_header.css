@@ -1,0 +1,152 @@
+#header{
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    justify-content: space-between;
+    background-color:#2a383d;
+    font-weight: 400;
+    margin: 0px;
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+
+#logo{
+    font-size:45px;
+    letter-spacing: 5px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+#logo span{
+    color: burlywood;
+}
+
+.menu{
+    padding:8px;
+}
+
+.menu_content{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu_content a{
+    display: flex;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.dropdown .btt_dropdown{
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.dropdown .fa-caret-up{
+    padding-left: 8px; 
+    padding-bottom: 3px;
+}
+
+.dropdown_content{
+    position: absolute;
+    display: none;
+    background-color: #2a383d;
+    width: max-content;
+    margin: auto;
+}
+
+.dropdown_content a{
+    padding:25px;
+    padding-right: 20px;
+    padding-left: 13px;
+}
+
+.menu_content i{
+    padding-right: 10px;
+    font-size: larger;
+}
+
+.menu .menu_btt{
+    display: none;
+    position: absolute;
+    top: 6px;
+    right: 2px;
+}
+
+.menu_content a:hover, #footer a:hover{
+    color: wheat ;
+    transition: 0.3s;
+}
+
+@media(max-width: 1440px){
+    #logo{
+        font-size:40px;
+    }
+
+    .dropdown .btt_dropdown{
+        font-size: 15px;
+   }
+   
+}
+
+@media(max-width: 800px){
+    #header{
+        text-align: center;
+        flex-direction: column;
+        padding-left: 0px;
+        padding: 10px;
+   }
+   
+    #logo{
+        font-size: 25px;
+   }
+   
+    .menu{
+        padding: 0px;
+   }
+   
+    .menu a, .dropdown .btt_dropdown{
+        display: none;
+   }
+   
+    .menu_content, .menu .menu_btt{
+        display: block;
+   }
+   
+    .menu.responsive .menu_content a{
+        display: block;
+        text-align: center;
+        padding:20px;
+        float: none;
+   }
+   
+    .menu.responsive .dropdown{
+        float: none;
+   }
+   
+    .menu.responsive .dropdown_content{
+        position: relative;
+        background-color: inherit;
+   }
+   
+    .menu.responsive .dropdown_content a{
+        position: relative;
+        background-color: inherit;
+   }
+   
+    .menu.responsive .dropdown .btt_dropdown{
+        display: block;
+        width: 100%;
+   }
+   
+}

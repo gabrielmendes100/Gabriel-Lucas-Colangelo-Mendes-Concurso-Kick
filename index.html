@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/estilo_header.css">
+  <link rel="stylesheet" type="text/css" href="css/estilo_corpo.css">
+  <link rel="stylesheet" type="text/css" href="css/estilo_banner.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <title>Jazz.com</title>
+</head>
+
+<body>
+
+  <div id="header">
+
+    <div id="logo">
+      <a href="index.html">Jazz<span>.com</span></a>
+    </div>
+
+    <div class="menu" id="my_menu">
+
+      <div class="menu_content">
+        <a href="artigos.html"><i class="fa fa-book"></i>Artigos</a>
+        <a href="top5s.html"><i class="fa fa-music" aria-hidden="true"></i>
+          Top 5s</a>
+
+        <div class="dropdown" onmouseenter="mouseenter()" onmouseleave="hide_dropdown()" onclick="show_hide()">
+          <button class="btt_dropdown" id="dropdown"><i class="fa fa-plus" aria-hidden="true"></i>Outros Conteúdos<i
+              class="fa fa-caret-up">
+            </i>
+          </button>
+
+          <div class="dropdown_content">
+            <a href="gabriel.html"><i class="fa fa-user" aria-hidden="true"></i>Sobre o Autor</a>
+            <a href="https://open.spotify.com/playlist/6j4eMju090KIsAgsbShxAk?si=f2cde002cc424899" target="_blank"
+              rel="noopener noreferrer"> <i class="fa fa-spotify"></i>Playlist Jazz.com
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+      <a href="#" onclick="show_menu()" class="menu_btt">
+        <i class="material-icons" style="font-size:40px;"> menu</i>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="container title_container">
+
+    <div id="logo">
+      <h1> <a href="index.html">Jazz<span>.com</span></a></h1>
+    </div>
+    <h2>O Melhor do Jazz Você Encontra Aqui! </h2>
+
+  </div>
+
+  <div class="container title_container">
+    <h1>Destaques </h1>
+  </div>
+
+  <div class="container">
+
+    <div id="img_container">
+      <div class="wall">
+        <a href="listabaixo.html">
+          <div class="n_text"> 1 / 3 </div>
+          <img src="img/banner/bannerbaixo.jpg">
+          <div class="i_text"> Top 5: Os Maiores Contrabaixistas do Jazz</div>
+        </a>
+      </div>
+
+      <div class="wall">
+        <a href="listatrompete.html">
+          <div class="n_text"> 2 / 3 </div>
+          <img src="img/banner/bannertrompete.jpg">
+          <div class="i_text"> Top 5: Os Principais Trompetistas do Jazz</div>
+        </a>
+      </div>
+
+      <div class="wall">
+        <a href="herbie.html">
+          <div class="n_text"> 3 / 3 </div>
+          <img src="img/banner/bannerherbie.jpg">
+          <div class="i_text"> Herbie Hancock: 81 Anos de Genialidade</div>
+        </a>
+      </div>
+      <a class="prev" onclick="nextSlide(-1)"><i class="fa fa-caret-left"></i> </a>
+      <a class="next" onclick="nextSlide(1)"><i class="fa fa-caret-right"></i> </a>
+
+    </div>
+
+  </div>
+
+  <div class="container title_container">
+    <h1>Postagens Recentes</h1>
+  </div>
+
+  <div class="container item_container">
+
+    <div class="item">
+      <a href="jazz.html">
+        <h3>Jazz? Aprenda Mais Sobre o Gênero Aqui</h3>
+        <img src="img/jazz.jpg">
+        <span>Ler Mais...</span>
+      </a>
+    </div>
+
+    <div class="item">
+      <a href="herbie.html">
+        <h3>Herbie Hancock: 81 Anos de Genialidade</h3>
+        <img src="img/herbie.jpg">
+        <span>Ler Mais...</span>
+      </a>
+    </div>
+
+    <div class="item">
+      <a href="listatrompete.html">
+        <h3>Top 5: Os Principais Trompetistas do Jazz</h3>
+        <img src="img/trompete.jpg">
+        <span>Ler Mais...</span>
+      </a>
+    </div>
+
+  </div>
+
+  <div id="footer">
+    <h4>Desenvolvido por Gabriel L. C. Mendes</h4>
+
+    <div class="footer_content">
+
+      <div class="footer_menu">
+        <h4>Menu</h4>
+        <ul>
+          <li> <a href="index.html">Home</a></li>
+        </ul>
+        <ul>
+          <li> <a href="artigos.html">Artigos</a></li>
+        </ul>
+        <ul>
+          <li> <a href="top5s.html">Top 5s</a></li>
+        </ul>
+      </div>
+
+      <div class="footer_menu">
+        <h4>Outros Conteúdos</h4>
+        <ul>
+          <li> <a href="gabriel.html">Sobre o Autor</a></li>
+        </ul>
+        <ul>
+          <li> <a href="https://open.spotify.com/playlist/6j4eMju090KIsAgsbShxAk?si=f2cde002cc424899" target="_blank"
+              rel="noopener noreferrer">Playlist Jazz.com </a></li>
+        </ul>
+      </div>
+
+      <div class="footer_menu">
+        <h4>Contatos</h4>
+        <ul>
+          <li> <a href="https://www.linkedin.com/in/gabriel-lucas-c-mendes-2a8ab9187/" target="_blank"
+              rel="noopener noreferrer">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a></li>
+        </ul>
+        <ul>
+          <li> <a href="mailto: gabriel.lucascolangelo@gmail.com">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+            </a></li>
+        </ul>
+      </div>
+
+    </div>
+    <a href="#"> <i class="fa fa-caret-up"></i>
+      Voltar ao Topo
+    </a>
+
+  </div>
+
+</body>
+
+<script src="js/banner.js"></script>
+<script src="js/menu.js"></script>
+
+</html>

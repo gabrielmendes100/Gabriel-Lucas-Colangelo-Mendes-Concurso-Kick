@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Convergence&display=swap');
+ html {
+    scroll-behavior: smooth;
+  }
+  
+ body{
+     font-family: 'Convergence', sans-serif;
+     font-size: 20px;
+     background-image: url(../img/background.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     margin: 0%;
+     padding: 0%;
+}
+
+ .container{
+     display: flex;
+     margin: 5px;
+     padding: 5px;
+     text-align: justify;
+     background-color:#466060b6;
+}
+
+ .title_container{
+     flex-direction: column;
+     text-align: center;
+}
+
+ .title_container #logo{
+     margin: 5px auto;
+}
+
+ .title_container h1{
+     width: max-content;
+}
+
+ .text_container{
+     padding: 10px;
+}
+
+ h1, h2, h3{
+     color: #f8d7d7;
+     padding: 10px;
+}
+
+ h1, h2{
+     background-color:#2A383D;
+     font-weight: 500;
+}
+
+ h3{
+     background-color:#375968;
+}
+
+ .title_container ,h2{
+     padding: 20px auto;
+}
+
+ .text_container h2{
+     text-align: start;
+}
+
+ .article{
+     display: flex;
+     flex-direction: column;
+     margin: 10px;
+     padding: 10px;
+}
+
+ .article img{
+     width: 100%;
+     display: block;
+     margin: auto;
+}
+
+ .article img, .article span, .text, .item, #img_container{
+     box-shadow:
+     0 1px 2px #1c242b62, 
+     0 2px 4px #1c242b62, 
+     0 4px 8px #1c242b62;
+}
+
+ .article span{
+     margin: auto;
+     padding: 5px;
+     font-size: medium;
+     font-weight: 600;
+     color: #0E0F19;
+     background-color: #DBBFBA;
+}
+
+ .article span a{
+     color: #1C242B;
+}
+
+ .article span a i{
+     font-size:larger;
+     font-weight: 600;
+     padding-right: 5px;
+     border-right: 1px solid black;
+}
+
+.article span a .fa{
+    color: darkgreen;
+    font-weight: 50;
+}
+
+ .text{
+     font-weight: 550;
+     margin: auto 0px;
+     display: block;
+     width: 100%;
+     padding: 10px;
+     background-color:#DBBFBA;
+}
+
+ .text p{
+     text-indent: 15px;
+     line-height: 20px;
+}
+
+ .item_container{
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     align-items:center;
+     padding: 10px;
+}
+
+ .item{
+     text-align: left;
+     display: flex;
+     flex-direction: column;
+     background-color: #1C242B;
+     padding: 8px 0px;
+     width: 30%;
+     height: fit-content;
+     margin: 5px;
+}
+
+ .item:hover{
+     width: 30.5%;
+     transition: 0.4s;
+}
+
+ .item h3{
+     font-weight: 500;
+     padding: 10px;
+}
+
+ .item span{
+     padding: 5px;
+}
+
+ .item img{
+     width:100%;
+}
+
+ #footer{
+     padding: 20px;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     background-color: #1C242B;
+     color:#DBBFBA;
+}
+
+ #footer h4, .footer_content{
+     border-bottom: 1px solid wheat;
+}
+
+ #footer .footer_content{
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+}
+
+ #footer .footer_menu{
+     margin: 15px;
+     text-align: left;
+}
+
+ #footer .footer_menu h4{
+     text-align: center;
+}
+
+ #footer i{
+     font-size:x-large;
+     padding-left:5px;
+     display: block;
+     text-align: center;
+}
+
+ @media(max-width: 1440px){
+     body{
+         font-size: 15px;
+    }
+    
+}
+
+ @media(max-width: 800px){
+     body{
+         font-size: 14px;
+    }
+    
+     .title_container h1, .title_container h2{
+         text-align: center;
+         margin: 0px auto;
+         width: fit-content;
+    }
+    
+     .text_container{
+         display: block;
+    }
+    
+     #banner img{
+         width: 80%;
+    }
+    
+     .article img{
+         width: 60%;
+    }
+    
+     .text{
+         width: 90%;
+         margin: auto;
+    }
+    
+     .item{
+         text-align: center;
+         width:80%;
+    }
+    
+     .item:hover{
+         width: 81%;
+    }
+    
+     #footer{
+         font-size: 15px;
+    }
+    
+}
+
+ @media(max-width: 600px){
+     .title_container #logo h1{
+         font-size: 40px;
+    }
+    
+     .title_container h1{
+         font-size: 25px;
+    }
+    
+     .title_container h2{
+         font-size: 15px;
+    }
+    
+     .article img{
+         width: 90%;
+    }
+
+    .item{
+        text-align: center;
+        width:90%;
+   }
+   
+    .item:hover{
+        width: 91%;
+   }
+    
+}
