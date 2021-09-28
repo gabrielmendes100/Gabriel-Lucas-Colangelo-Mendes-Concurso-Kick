@@ -73,8 +73,7 @@
 }
 
  .article img{
-     width: 85%;
-     display: block;
+     width: 90%;
      margin: auto;
 }
 
@@ -114,7 +113,7 @@
      font-weight: 550;
      margin: auto 0px;
      display: block;
-     width: 55%;
+     width: 40%;
      padding: 10px;
      background-color:#DBBFBA;
 }
