@@ -105,8 +105,11 @@
 }
 
 .article span a .fa{
+    font-weight: 100;
+}
+
+.article span a .fa-spotify{
     color: darkgreen;
-    font-weight: 50;
 }
 
  .text{
